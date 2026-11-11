@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  ArrowDown,
+  ChevronDown,
   ArrowUpRight,
   Globe,
   Layers,
@@ -91,7 +91,7 @@ export default function HomePage() {
           <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent rounded-full blur-[120px]" />
         </div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 w-full pt-16 lg:pt-0">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
           {/* Left Column Content */}
           <motion.div
             variants={{
@@ -169,14 +169,16 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-primary/20 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity" />
                 <div className="relative z-10 h-full w-full flex items-center justify-center">
                   <img
-                    src="https://www.image2url.com/r2/default/images/1781838217167-7b459953-6484-4588-a66d-d0ce4bcfd872.jpeg"
+                    src="/images/hero-showcase.jpeg"
                     alt="Prospira Premium Product Showcase"
-                    className="rounded-xl shadow-2xl rotate-3 max-h-[85%] max-w-[85%] object-cover"
+                    width={800}
+                    height={800}
+                    className="rounded-xl shadow-2xl rotate-3 w-full max-w-[550px] aspect-[4/3] object-cover"
                   />
                   {/* Floating badge */}
                   <motion.div
                     animate={{ y: [-10, 10, -10] }}
-                    transition={{ duration: 4, repeat: Infinity }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-0 right-0 p-4 bg-white/10 rounded-2xl border border-white/20 backdrop-blur-md"
                   >
                     <div className="w-12 h-1 bg-primary rounded-full mb-2" />
@@ -191,10 +193,10 @@ export default function HomePage() {
         {/* Scroll indicator */}
         <motion.div
           animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50"
         >
-          <ArrowDown size={32} />
+          <ChevronDown size={32} />
         </motion.div>
       </section>
 
@@ -210,7 +212,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CLIENT LOGOS */}
+      {/* CLIENT LOGOS (FIXED / STATIONARY) */}
       <section className="py-12 bg-background overflow-hidden border-y border-border">
         <div className="flex whitespace-nowrap">
           <div className="flex gap-20 items-center justify-around min-w-full px-10">
@@ -319,7 +321,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-primary blur-[120px] opacity-20 group-hover:opacity-40 transition-opacity" />
             <div className="relative rounded-[2rem] overflow-hidden border border-white/10 aspect-video">
               <img
-                src="https://picsum.photos/seed/cta-visual/1200/800"
+                src="/images/cta-visual.jpg"
                 alt="Digital Product"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />
