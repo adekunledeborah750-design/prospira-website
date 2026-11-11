@@ -61,14 +61,14 @@ const services = [
 ];
 
 const logos = [
-  "GOOGLE",
-  "META",
   "VERCEL",
   "STRIPE",
   "LINEAR",
   "AWS",
   "MICROSOFT",
   "ADOBE",
+  "GOOGLE",
+  "META",
 ];
 
 export default function HomePage() {

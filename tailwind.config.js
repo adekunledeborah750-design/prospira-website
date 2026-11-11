@@ -43,7 +43,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        headline: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        headline: ['Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
     },
