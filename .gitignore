@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production build
+dist
+dist-ssr
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary audit / inspection scripts & assets
+*.py
+*.png
+scraped_page.html
+scraped_pages/
+original_assets/
+original_screenshots/
+recreated_screenshots/
+inspect_*.js
+check_*.js
+compare_*.cjs
+capture_*.js
